@@ -1,0 +1,15 @@
+body {
+    background-color: rgb(128, 121, 170)
+}
+img{
+    width: 150px;
+    height: 75px;
+    animation: spin 0.5s linear infinite;
+    animation-play-state: paused;
+}
+img:hover {
+   animation-play-state: running;
+}
+@keyframes spin{
+    to{ transform: rotate(360deg)}
+}
