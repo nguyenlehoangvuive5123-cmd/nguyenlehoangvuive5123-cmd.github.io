@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concept Artworks</title>
+    <link rel="stylesheet" href="AP_Concept.css">
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <!-- NAVIGATION BAR -->
+        <nav class="toolbar">
+            <a href="AP_Home.html"><img src="images/home_button.png" alt="Home"></a>
+
+            <div class="dropdown">
+                <button class="dropbtn"><img src="images/dropdown_button.png" alt="Menu"></button>
+                <div class="dropdown-content">
+                    <a href="AP_Commissions.html">Commissions</a>
+                    <a href="AP_Contacts.html">Contacts</a>
+                    <a href="AP_General.html">General Artworks</a>
+                </div>
+            </div>
+        </nav>
+        <div id="page-content">
+            <h1>CONCEPT ARTWORKS</h1>
+
+            <div class="gallery-grid">
+                <div class="art-item" data-title="Ash"
+                    data-desc="Artworks of an original character: a female Korean named Ash. The design is not yet finalized."
+                    data-gallery='[
+                "images/Concept/CharacterDesign_Ash.PNG", "images/Concept/CharacterDesign_Ash_1.png", "images/Concept/CharacterDesign_Ash_2.png", "images/Concept/CharacterDesign_Ash_Alt.PNG"]'>
+                    <img src="images/Concept/CharacterDesign_Ash.PNG" alt="Original character: Ash">
+                    <h3>Ash</h3>
+                </div>
+
+                <div class="art-item" data-title="Hikaru"
+                    data-desc="Artworks of an original character: a male Japanese named Hikaru. The design is not yet finalized."
+                    data-gallery='[
+                "images/Concept/CharacterDesign_Hikaru_Overview.PNG", "images/Concept/CharacterDesign_Hikaru_1.PNG", "images/Concept/CharacterDesign_Hikaru_2.PNG"
+                ]'>
+                    <img src="images/Concept/CharacterDesign_Hikaru_Overview.PNG" alt="Original character: Hikaru">
+                    <h3>Hikaru</h3>
+                </div>
+                <div class="art-item" data-title="Sciainno"
+                    data-desc="Character Designs, Concept Art and Cover Art consisting of male and female mascots of a Science Project named Sciainno"
+                    data-gallery='[
+          "images/Concept/PostCover_FINAL.jpeg", "images/Concept/CharacterDesign_Sciainno_Male_FINAL.jpeg", "images/Concept/CharacterDesign_Sciainno_Female_FINAL.jpeg", "images/Concept/CharacterDesign_Sciainno_Male_1.png", 
+          "images/Concept/CharacterDesign_Sciainno_Female_1.png", "images/Concept/CharacterDesign_Sciainno_Male_2.png", "images/Concept/CharacterDesign_Sciainno_Male_3.png", "images/Concept/PostCover_1.png",
+          "images/Concept/PostCover_2.png", "images/Concept/PostCover_3.png"
+        ]'>
+                    <img src="images/Concept/PostCover_FINAL.jpeg" alt="Sciainno Artwork">
+                    <h3>Sciainno</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- MODAL -->
+        <div id="modal" class="modal">
+            <span class="close">&times;</span>
+            <div class="modal-container">
+                <!-- LEFT: IMAGE -->
+                <img id="modal-img" class="modal-content" alt="">
+
+                <!-- RIGHT: TEXT BOX -->
+                <div class="modal-text-box">
+                    <div id="modal-title" class="modal-title"></div>
+                    <div id="modal-caption" class="modal-caption"></div>
+                    <div id="modal-count" class="modal-count"></div>
+                </div>
+            </div>
+
+            <!-- CAROUSEL ARROWS -->
+            <span class="arrow left">&#10094;</span>
+            <span class="arrow right">&#10095;</span>
+        </div>
+    </div>
+    <script src="AP_Concept.js"></script>
+</body>
+<footer>
+    <p>Made by LeHoang Nguyen</p>
+</footer>
+
+</html>
