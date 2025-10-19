@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commissions</title>
+    <link rel="stylesheet" href="css/AP_Commissions.css">
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <!-- NAVIGATION BAR -->
+        <nav class="toolbar">
+            <a href="index.html"><img src="images/home_button.png" alt="Home"></a>
+
+            <div class="dropdown">
+                <button class="dropbtn"><img src="images/dropdown_button.png" alt="Menu"></button>
+                <div class="dropdown-content">
+                    <a href="AP_Concept.html">Concept Art</a>
+                    <a href="AP_Contacts.html">Contacts</a>
+                    <a href="AP_General.html">General Artworks</a>
+                </div>
+            </div>
+        </nav>
+        <div id="page-content">
+            <h1>COMMISSIONS</h1>
+
+            <div class="gallery-grid">
+                <div class="art-item" data-title="Julie"
+                    data-desc="Artwork for my girlfriend: Julie. I turned this into a keychain for her." data-gallery='[
+                "images/Commissions/JulieKC_1.jpeg", "images/Commissions/JulieKC_2.PNG"]'>
+                    <img src="images/Commissions/JulieKC_1.jpeg" alt="Julie">
+                    <h3>Julie</h3>
+                </div>
+                <div class="art-item" data-title="Classmates"
+                    data-desc="Artworks for my female friends from highschool. I drew and made it all into keychains." data-gallery='[
+                "images/Commissions/KC_1.png", "images/Commissions/KC_2.png", "images/Commissions/KC_3.png", "images/Commissions/KC_4.png", "images/Commissions/KC_5.png", "images/Commissions/KC_6.png"]'>
+                    <img src="images/Commissions/KC_1.png" alt="Classmates">
+                    <h3>Keychains of Classmates</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- MODAL -->
+        <div id="modal" class="modal">
+            <span class="close">&times;</span>
+            <div class="modal-container">
+                <!-- LEFT: IMAGE -->
+                <img id="modal-img" class="modal-content" alt="">
+
+                <!-- RIGHT: TEXT BOX -->
+                <div class="modal-text-box">
+                    <div id="modal-title" class="modal-title"></div>
+                    <div id="modal-caption" class="modal-caption"></div>
+                    <div id="modal-count" class="modal-count"></div>
+                </div>
+            </div>
+
+            <!-- CAROUSEL ARROWS -->
+            <span class="arrow left">&#10094;</span>
+            <span class="arrow right">&#10095;</span>
+        </div>
+    </div>
+    <script src="js/AP_Commissions.js"></script>
+</body>
+<footer>
+    <p>Made by LeHoang Nguyen</p>
+</footer>
+
+</html>
