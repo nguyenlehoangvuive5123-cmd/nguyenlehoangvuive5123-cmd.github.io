@@ -122,7 +122,23 @@ h3 {
   top: 0;
   z-index: 100;
 }
+/* BUTTON IMAGES — lock their size */
+.toolbar a img,
+.toolbar .dropbtn img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  display: inline-block;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
 
+/* OPTIONAL HOVER EFFECTS */
+.toolbar a img:hover,
+.toolbar .dropbtn img:hover {
+  transform: scale(1.1);
+  opacity: 0.85;
+}
 .toolbar .dropbtn {
   background: none;
   border: none; /* remove grey border */
