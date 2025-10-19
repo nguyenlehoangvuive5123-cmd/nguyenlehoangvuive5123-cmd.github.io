@@ -117,26 +117,12 @@ h3 {
   transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
-/* REMOVE GREY BORDER AND DEFAULT BUTTON STYLES */
-.toolbar .dropbtn {
-  background: none;
-  border: none;
-  padding: 0;
-  margin: 0;
-  cursor: pointer;
-}
-
-.toolbar .dropbtn:focus {
-  outline: none;
-}
-
 /* OPTIONAL HOVER EFFECTS */
 .toolbar a img:hover,
 .toolbar .dropbtn img:hover {
   transform: scale(1.1);
   opacity: 0.85;
 }
-
 
 /* Home button */
 .toolbar a[href="AP_Home.html"] img,
