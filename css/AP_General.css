@@ -97,16 +97,46 @@ h3 {
 /* TOOLBAR */
 .toolbar {
   display: flex;
-  justify-content: flex-start;
   align-items: center;
   gap: 15px;
   padding: 10px 20px;
   background: none;
-  box-shadow: none;
   position: sticky;
   top: 0;
-  z-index: 1007;
+  z-index: 1000;
 }
+
+/* BUTTON IMAGES — lock their size */
+.toolbar a img,
+.toolbar .dropbtn img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  display: inline-block;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+/* REMOVE GREY BORDER AND DEFAULT BUTTON STYLES */
+.toolbar .dropbtn {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.toolbar .dropbtn:focus {
+  outline: none;
+}
+
+/* OPTIONAL HOVER EFFECTS */
+.toolbar a img:hover,
+.toolbar .dropbtn img:hover {
+  transform: scale(1.1);
+  opacity: 0.85;
+}
+
 
 /* Home button */
 .toolbar a[href="AP_Home.html"] img,
